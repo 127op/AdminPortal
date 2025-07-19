@@ -1,0 +1,201 @@
+[debug] [2025-06-15T18:11:23.968Z] ----------------------------------------------------------------------
+[debug] [2025-06-15T18:11:23.971Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akhil\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-06-15T18:11:23.971Z] CLI Version:   14.4.0
+[debug] [2025-06-15T18:11:23.971Z] Platform:      win32
+[debug] [2025-06-15T18:11:23.971Z] Node Version:  v22.14.0
+[debug] [2025-06-15T18:11:23.971Z] Time:          Sun Jun 15 2025 23:41:23 GMT+0530 (India Standard Time)
+[debug] [2025-06-15T18:11:23.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-15T18:11:23.973Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-06-15T18:11:24.194Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-15T18:11:24.195Z] > authorizing via signed-in user (akhilyadavbil@gmail.com)
+[debug] [2025-06-15T18:11:24.195Z] [iam] checking project collegecampusapp-apas653 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-15T18:11:24.196Z] Checked if tokens are valid: false, expires at: 1748260670388
+[debug] [2025-06-15T18:11:24.196Z] Checked if tokens are valid: false, expires at: 1748260670388
+[debug] [2025-06-15T18:11:24.196Z] > refreshing access token with scopes: []
+[debug] [2025-06-15T18:11:24.197Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-06-15T18:11:24.198Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-15T18:11:24.621Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-06-15T18:11:24.623Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-06-15T18:11:24.634Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions [none]
+[debug] [2025-06-15T18:11:24.635Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions x-goog-quota-user=projects/collegecampusapp-apas653
+[debug] [2025-06-15T18:11:24.636Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-15T18:11:25.053Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-06-15T18:11:25.054Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-06-15T18:11:26.566Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions 200
+[debug] [2025-06-15T18:11:26.567Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-15T18:11:26.569Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:26.570Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:26.571Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 [none]
+[debug] [2025-06-15T18:11:27.483Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 200
+[debug] [2025-06-15T18:11:27.484Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 {"projectId":"collegecampusapp-apas653","projectNumber":"549202264660","displayName":"CollegeCampusApp","name":"projects/collegecampusapp-apas653","resources":{"hostingSite":"collegecampusapp-apas653","realtimeDatabaseInstance":"collegecampusapp-apas653-default-rtdb"},"state":"ACTIVE","etag":"1_726f0924-35eb-4f4f-8233-417706115392"}
+[info] 
+[info] === Deploying to 'collegecampusapp-apas653'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-06-15T18:11:27.559Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:27.560Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:27.560Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions [none]
+[debug] [2025-06-15T18:11:27.561Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-15T18:11:29.942Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions 200
+[debug] [2025-06-15T18:11:29.943Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions {"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[collegecampusapp-apas653]: beginning deploy... 
+[info] i  hosting[collegecampusapp-apas653]: found 8 files in web_app 
+[debug] [2025-06-15T18:11:29.973Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-15T18:11:30.046Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:30.047Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:30.048Z] [hosting] hash cache [d2ViX2FwcA] stored for 8 files
+[debug] [2025-06-15T18:11:30.049Z] [hosting][hash queue][FINAL] {"max":7,"min":1,"avg":1.75,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":11}
+[debug] [2025-06-15T18:11:30.050Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32:populateFiles [none]
+[debug] [2025-06-15T18:11:30.050Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32:populateFiles {"files":{"/test-instructions.html":"a7ba0c5db011451a18c739d451b45bc919a3067ee552aba575f4452dc27c33ef","/index.html":"d367d914ef74d98d5751696f6e1be22fdf67b3db900e69aa814965678dc19ae9","/js/security.js":"a9f39c4f5d616d9a94d84a7bb6bed5a1bec34ac52b8dad03a787cab4d2b096e0","/js/config.js":"02b46784ace16e350c701e5cfefb49cd1a32c33808e509c9c02bf62d096d5d1d","/js/auth.js":"e9374e6428921dac43a115bdf3eba5f5d59f29b8a929ac0056628b6118b5980c","/js/app.js":"4e1872606540d380af32332b9c4a1dc69d26a5e1a18a47b834915ee832f222c6","/css/styles.css":"80d1c922b077ef0deaeb2c871480e3972ab7acc37a3f661cda8ff197f81205f5","/js/dashboard.js":"ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32"}}
+[debug] [2025-06-15T18:11:30.590Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32:populateFiles 200
+[debug] [2025-06-15T18:11:30.590Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32:populateFiles {"uploadRequiredHashes":["ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/f01330c9c786fc32/files"}
+[debug] [2025-06-15T18:11:30.592Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:30.592Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:30.593Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/f01330c9c786fc32/files/ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32 [none]
+[debug] [2025-06-15T18:11:30.593Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/f01330c9c786fc32/files/ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32 [stream]
+[debug] [2025-06-15T18:11:30.597Z] [hosting][populate queue][FINAL] {"max":547,"min":547,"avg":547,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":551}
+[debug] [2025-06-15T18:11:30.597Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2025-06-15T18:11:33.420Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/f01330c9c786fc32/files/ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32 200
+[debug] [2025-06-15T18:11:33.421Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/f01330c9c786fc32/files/ddf7cc56b5a83a2ca20ad0d3a84b0d4238aa0ab999f21bbfb7da5c81f1f91e32 [stream]
+[debug] [2025-06-15T18:11:33.422Z] [hosting][upload queue][FINAL] {"max":2830,"min":2830,"avg":2830,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2831}
+[info] i  hosting: upload complete 
+[info] +  hosting[collegecampusapp-apas653]: file upload complete 
+[debug] [2025-06-15T18:11:33.423Z] [hosting] deploy completed after 3475ms
+[debug] [2025-06-15T18:11:33.424Z] [
+  {
+    "config": {
+      "public": "web_app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "collegecampusapp-apas653"
+    },
+    "version": "projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32"
+  }
+]
+[info] i  hosting[collegecampusapp-apas653]: finalizing version... 
+[debug] [2025-06-15T18:11:33.427Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:33.427Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:33.428Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/f01330c9c786fc32 updateMask=status%2Cconfig
+[debug] [2025-06-15T18:11:33.429Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/f01330c9c786fc32 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-06-15T18:11:34.352Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/f01330c9c786fc32 200
+[debug] [2025-06-15T18:11:34.353Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/f01330c9c786fc32 {"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:11:30.137179Z","createUser":{"email":"akhilyadavbil@gmail.com"},"finalizeTime":"2025-06-15T18:11:35.063368Z","finalizeUser":{"email":"akhilyadavbil@gmail.com"}}
+[debug] [2025-06-15T18:11:34.353Z] [hosting] finalized version for collegecampusapp-apas653:[object Object]
+[info] +  hosting[collegecampusapp-apas653]: version finalized 
+[info] i  hosting[collegecampusapp-apas653]: releasing new version... 
+[debug] [2025-06-15T18:11:34.355Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:34.355Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:11:34.356Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases versionName=projects%2F549202264660%2Fsites%2Fcollegecampusapp-apas653%2Fversions%2Ff01330c9c786fc32
+[debug] [2025-06-15T18:11:34.356Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases {}
+[debug] [2025-06-15T18:11:35.373Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases 200
+[debug] [2025-06-15T18:11:35.374Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases {"name":"projects/549202264660/sites/collegecampusapp-apas653/channels/live/releases/1750011095645000","version":{"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:11:30.137179Z","createUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"},"finalizeTime":"2025-06-15T18:11:35.063368Z","finalizeUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}},"type":"DEPLOY","releaseTime":"2025-06-15T18:11:35.645Z","releaseUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}}
+[debug] [2025-06-15T18:11:35.375Z] [hosting] release: {"name":"projects/549202264660/sites/collegecampusapp-apas653/channels/live/releases/1750011095645000","version":{"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/f01330c9c786fc32","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:11:30.137179Z","createUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"},"finalizeTime":"2025-06-15T18:11:35.063368Z","finalizeUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}},"type":"DEPLOY","releaseTime":"2025-06-15T18:11:35.645Z","releaseUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}}
+[info] +  hosting[collegecampusapp-apas653]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/collegecampusapp-apas653/overview
+[info] Hosting URL: https://collegecampusapp-apas653.web.app
+[debug] [2025-06-15T18:16:37.722Z] ----------------------------------------------------------------------
+[debug] [2025-06-15T18:16:37.728Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\akhil\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2025-06-15T18:16:37.729Z] CLI Version:   14.4.0
+[debug] [2025-06-15T18:16:37.729Z] Platform:      win32
+[debug] [2025-06-15T18:16:37.729Z] Node Version:  v22.14.0
+[debug] [2025-06-15T18:16:37.730Z] Time:          Sun Jun 15 2025 23:46:37 GMT+0530 (India Standard Time)
+[debug] [2025-06-15T18:16:37.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-15T18:16:37.903Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-15T18:16:37.905Z] > authorizing via signed-in user (akhilyadavbil@gmail.com)
+[debug] [2025-06-15T18:16:37.905Z] [iam] checking project collegecampusapp-apas653 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-06-15T18:16:37.906Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:37.907Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:37.908Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions [none]
+[debug] [2025-06-15T18:16:37.908Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions x-goog-quota-user=projects/collegecampusapp-apas653
+[debug] [2025-06-15T18:16:37.908Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-15T18:16:39.915Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions 200
+[debug] [2025-06-15T18:16:39.916Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/collegecampusapp-apas653:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-06-15T18:16:39.917Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:39.917Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:39.918Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 [none]
+[debug] [2025-06-15T18:16:40.928Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 200
+[debug] [2025-06-15T18:16:40.929Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/collegecampusapp-apas653 {"projectId":"collegecampusapp-apas653","projectNumber":"549202264660","displayName":"CollegeCampusApp","name":"projects/collegecampusapp-apas653","resources":{"hostingSite":"collegecampusapp-apas653","realtimeDatabaseInstance":"collegecampusapp-apas653-default-rtdb"},"state":"ACTIVE","etag":"1_726f0924-35eb-4f4f-8233-417706115392"}
+[info] 
+[info] === Deploying to 'collegecampusapp-apas653'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2025-06-15T18:16:40.943Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:40.943Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:40.944Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions [none]
+[debug] [2025-06-15T18:16:40.944Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2025-06-15T18:16:43.027Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions 200
+[debug] [2025-06-15T18:16:43.028Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions {"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[collegecampusapp-apas653]: beginning deploy... 
+[info] i  hosting[collegecampusapp-apas653]: found 8 files in web_app 
+[debug] [2025-06-15T18:16:43.063Z] [hosting] uploading with 200 concurrency
+[debug] [2025-06-15T18:16:43.075Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:43.075Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:43.078Z] [hosting] hash cache [d2ViX2FwcA] stored for 8 files
+[debug] [2025-06-15T18:16:43.079Z] [hosting][hash queue][FINAL] {"max":7,"min":1,"avg":1.75,"active":0,"complete":8,"success":8,"errored":0,"retried":0,"total":8,"elapsed":13}
+[debug] [2025-06-15T18:16:43.079Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52:populateFiles [none]
+[debug] [2025-06-15T18:16:43.080Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52:populateFiles {"files":{"/test-instructions.html":"a7ba0c5db011451a18c739d451b45bc919a3067ee552aba575f4452dc27c33ef","/index.html":"d367d914ef74d98d5751696f6e1be22fdf67b3db900e69aa814965678dc19ae9","/js/security.js":"a9f39c4f5d616d9a94d84a7bb6bed5a1bec34ac52b8dad03a787cab4d2b096e0","/js/config.js":"02b46784ace16e350c701e5cfefb49cd1a32c33808e509c9c02bf62d096d5d1d","/js/auth.js":"e9374e6428921dac43a115bdf3eba5f5d59f29b8a929ac0056628b6118b5980c","/js/app.js":"4e1872606540d380af32332b9c4a1dc69d26a5e1a18a47b834915ee832f222c6","/css/styles.css":"80d1c922b077ef0deaeb2c871480e3972ab7acc37a3f661cda8ff197f81205f5","/js/dashboard.js":"aa0bd922c8299889f73040f4cb588f0d2cff2db81dc2ff02a5f7fa0f9d7fbac2"}}
+[debug] [2025-06-15T18:16:43.688Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52:populateFiles 200
+[debug] [2025-06-15T18:16:43.689Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52/files"}
+[debug] [2025-06-15T18:16:43.690Z] [hosting][populate queue][FINAL] {"max":616,"min":616,"avg":616,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":616}
+[debug] [2025-06-15T18:16:43.691Z] [hosting] uploads queued: 0
+[debug] [2025-06-15T18:16:43.691Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1750011403691}
+[info] i  hosting: upload complete 
+[info] +  hosting[collegecampusapp-apas653]: file upload complete 
+[debug] [2025-06-15T18:16:43.692Z] [hosting] deploy completed after 658ms
+[debug] [2025-06-15T18:16:43.692Z] [
+  {
+    "config": {
+      "public": "web_app",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "collegecampusapp-apas653"
+    },
+    "version": "projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52"
+  }
+]
+[info] i  hosting[collegecampusapp-apas653]: finalizing version... 
+[debug] [2025-06-15T18:16:43.693Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:43.702Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:43.704Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52 updateMask=status%2Cconfig
+[debug] [2025-06-15T18:16:43.705Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52 {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2025-06-15T18:16:44.414Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52 200
+[debug] [2025-06-15T18:16:44.416Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52 {"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:16:43.532352Z","createUser":{"email":"akhilyadavbil@gmail.com"},"finalizeTime":"2025-06-15T18:16:45.512395Z","finalizeUser":{"email":"akhilyadavbil@gmail.com"}}
+[debug] [2025-06-15T18:16:44.417Z] [hosting] finalized version for collegecampusapp-apas653:[object Object]
+[info] +  hosting[collegecampusapp-apas653]: version finalized 
+[info] i  hosting[collegecampusapp-apas653]: releasing new version... 
+[debug] [2025-06-15T18:16:44.419Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:44.425Z] Checked if tokens are valid: true, expires at: 1750014683624
+[debug] [2025-06-15T18:16:44.426Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases versionName=projects%2F549202264660%2Fsites%2Fcollegecampusapp-apas653%2Fversions%2Fdd95de43c43b5f52
+[debug] [2025-06-15T18:16:44.426Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases {}
+[debug] [2025-06-15T18:16:44.954Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases 200
+[debug] [2025-06-15T18:16:44.955Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/collegecampusapp-apas653/channels/live/releases {"name":"projects/549202264660/sites/collegecampusapp-apas653/channels/live/releases/1750011405453000","version":{"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:16:43.532352Z","createUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"},"finalizeTime":"2025-06-15T18:16:45.512395Z","finalizeUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}},"type":"DEPLOY","releaseTime":"2025-06-15T18:16:45.453Z","releaseUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}}
+[debug] [2025-06-15T18:16:44.955Z] [hosting] release: {"name":"projects/549202264660/sites/collegecampusapp-apas653/channels/live/releases/1750011405453000","version":{"name":"projects/549202264660/sites/collegecampusapp-apas653/versions/dd95de43c43b5f52","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2025-06-15T18:16:43.532352Z","createUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"},"finalizeTime":"2025-06-15T18:16:45.512395Z","finalizeUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}},"type":"DEPLOY","releaseTime":"2025-06-15T18:16:45.453Z","releaseUser":{"email":"akhilyadavbil@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/ACg8ocIG8BrLinvTpIih_67A005FKVZKZUkgyzrhLYAh8hgRv8djPbOu"}}
+[info] +  hosting[collegecampusapp-apas653]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/collegecampusapp-apas653/overview
+[info] Hosting URL: https://collegecampusapp-apas653.web.app
